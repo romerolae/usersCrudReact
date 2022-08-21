@@ -3,6 +3,7 @@
 }
 
 body {
+	max-width: 1200px;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -52,7 +53,7 @@ ul {
 .card {
 	display: flex;
 	gap: 40px;
-	width: 550px;
+	width: 450px;
 	border-radius: 5px;
 	padding: 20px;
 	border: 1px solid #aaa9;
@@ -104,4 +105,18 @@ ul {
 .card__btn:nth-child(2) {
 	/* background-color: cornflowerblue; */
 	color: red;
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card__footer {
+		display: inline-flex;
+		gap: 30px;
+		margin: 0 auto;
+		height: min-content;
+	}
 }
