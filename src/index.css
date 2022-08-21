@@ -1,0 +1,93 @@
+/*====Form Modal===*/
+
+body {
+	/* font-family: 'Lato', sans-serif;
+	font-family: 'Overpass', sans-serif;
+	font-family: 'Red Hat Display', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Tapestry', cursive; */
+}
+
+input {
+	outline: none;
+}
+
+.form-none {
+	display: none;
+}
+.form-container {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+}
+
+.form {
+	border: 1px solid #ccca;
+	padding: 20px;
+	width: max-content;
+	border-radius: 10px;
+	background-color: blanchedalmond;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.form__title {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.form__list {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form__item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.form__x {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	width: 20px;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 50%;
+	background-color: aliceblue;
+}
+
+.form__x:hover {
+	background-color: #0005;
+	color: rebeccapurple;
+}
+
+.form__btn {
+	display: block;
+	width: max-content;
+	padding: 8px 12px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	margin-top: 10px;
+	background-color: rgb(142, 116, 116);
+	color: white;
+}
