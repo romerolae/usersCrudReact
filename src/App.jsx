@@ -31,8 +31,9 @@ function App() {
 			<img src="/img/AFBannerReact_1920x500.png" alt="" className="main__img" />
 			<h1 className="main__title">USERS CRUD</h1>
 			<div className="create__btn">
-				<button onClick={handleOpenForm}>
-					+ <i class="fa-regular fa-address-card"> Add New User</i>
+				<i class="fa-regular fa-address-card"> </i>
+				<button title="Create a new user" onClick={handleOpenForm}>
+					ADD NEW USER
 				</button>
 			</div>
 			<div className={isFormOpen ? 'form-container' : 'form-none'}>

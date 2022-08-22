@@ -3,7 +3,6 @@
 }
 
 body {
-	max-width: 1200px;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -37,7 +36,33 @@ ul {
 .create__btn {
 	display: flex;
 	justify-content: flex-end;
-	margin: 20px 130px;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 220px;
+	border: none;
+}
+
+.create__btn button {
+	background-color: cadetblue;
+	color: whitesmoke;
+	cursor: pointer;
+	transition: transform 200ms ease;
+	border: none;
+	height: 35px;
+	width: 150px;
+	border-radius: 10px;
+	font-size: 700;
+	box-shadow: 5px 5px 10px rgba(34, 19, 19, 0.733);
+}
+
+.create__btn:hover {
+	transform: scale(1.05);
+	transition: transform 200ms ease;
+}
+
+.create__btn i {
+	font-size: 25px;
+	color: cadetblue;
 }
 
 .card-container {
@@ -64,7 +89,7 @@ ul {
 
 .card:hover {
 	transform: scale(1.05);
-	transition: trasform 200ms ease;
+	transition: transform 200ms ease;
 }
 
 .card__item {
@@ -72,7 +97,9 @@ ul {
 	flex-direction: column;
 	gap: 2px;
 	margin-bottom: 7px;
-	color: #aaac;
+	color: cornflowerblue;
+	font-family: 'Red Hat Display', sans-serif;
+
 	padding-left: 10px;
 }
 
@@ -96,7 +123,14 @@ ul {
 	/* padding: 8px 12px; */
 	border-radius: 5px;
 	cursor: pointer;
+	font-size: 20px;
+	transition: transform 200ms ease;
 }
+.card__btn:hover {
+	transform: scale(1.2);
+	transition: transform 200ms ease;
+}
+
 .card__btn:nth-child(1) {
 	/* background-color: #aaa9; */
 	color: rgb(83, 132, 10);
@@ -111,6 +145,33 @@ ul {
 	.card {
 		display: flex;
 		flex-direction: column;
+		gap: 30px;
+	}
+	button {
+		margin: 0;
+	}
+
+	.create__btn {
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		margin: 0 auto;
+		border: none;
+		width: 150px;
+	}
+
+	.create__btn button {
+		/* height: 35px; */
+		width: 200px;
+		font-size: 0.7rem;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.create__btn i {
+		font-size: 25px;
 	}
 
 	.card__footer {

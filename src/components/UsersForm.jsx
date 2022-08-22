@@ -63,7 +63,7 @@ const UsersForm = ({
 		<div className="form-container">
 			<form onSubmit={handleSubmit(submit)} className="form">
 				<div onClick={handleCloseForm} className="form__x">
-					X
+					<i class="fa-regular fa-rectangle-xmark"></i>
 				</div>
 				<h2 className="form__title">
 					{updateInfo ? 'Update User' : 'New User'}
@@ -78,28 +78,45 @@ const UsersForm = ({
 							{...register('first_name')}
 							type="text"
 							id="first_name"
+							placeholder="First Name"
 						/>
 					</li>
 					<li className="form__item">
-						<label htmlFor="last_name">Last Name:</label>
+						<label htmlFor="last_name">Last Name</label>
 						<input
 							className="form__input"
 							{...register('last_name')}
 							type="text"
 							id="last_name"
+							placeholder="Last Name"
 						/>
 					</li>
 					<li className="form__item">
-						<label htmlFor="birthday">Birthday:</label>
-						<input {...register('birthday')} type="date" id="birthday" />
+						<label htmlFor="birthday">Birthday</label>
+						<input
+							{...register('birthday')}
+							type="date"
+							id="birthday"
+							placeholder="Birthday"
+						/>
 					</li>
 					<li className="form__item">
-						<label htmlFor="email">Email:</label>
-						<input {...register('email')} type="email" id="email" />
+						<label htmlFor="email">Email</label>
+						<input
+							{...register('email')}
+							type="email"
+							id="email"
+							placeholder="Email Address"
+						/>
 					</li>
 					<li className="form__item">
-						<label htmlFor="password">Password:</label>
-						<input {...register('password')} type="password" id="password" />
+						<label htmlFor="password">Password</label>
+						<input
+							{...register('password')}
+							type="password"
+							id="password"
+							placeholder="Password"
+						/>
 					</li>
 				</ul>
 				<button className="form__btn">
